@@ -115,7 +115,7 @@ export default () => {
   ]
 
   return (
-    <Okrmaps
+    <DagreMap
       renderChild={(info: INode) => {
         return <div>{info.uuid}我是自己diy的子节点样式</div>;
       }}
@@ -145,7 +145,7 @@ export default () => {
         upLength: 'upLength', // 上子节点个数，控制是否可以新增
         downLength: 'downLength', //下子节点个数，控制是否可以新增
       }}
-    ></Okrmaps>
+    />
   );
 };
 ```
